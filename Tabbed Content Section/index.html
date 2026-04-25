@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Content</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tabs">
+        <button class="tab-btn active" onclick="openTab('overview')">Overview</button>
+        <button class="tab-btn" onclick="openTab('info')">Info</button>
+        <button class="tab-btn" onclick="openTab('contact')">Contact</button>
+    </div>
+
+    <div id="overview" class="tab-content active">
+        <h2>Overview</h2>
+        <p>This is an overview content</p>
+    </div>
+
+    <div id="info" class="tab-content">
+        <h2>Info</h2> 
+        <p>This is an info content</p>
+    </div>
+
+    <div id="contact" class="tab-content">
+        <h2>Contact</h2>
+        <p>This is the contact content</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
